@@ -16,11 +16,11 @@
   width: 100%;
 }
 
-.header .more-inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header {
     text-align: center;
@@ -34,13 +34,15 @@
   margin: 0 auto 0;
 }
 
-.task {
+.add-task__input,
+.tasks__input,
+.tasks__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task__wrapper {
   display: flex;
 }
 
@@ -55,7 +57,8 @@
 }
 
 .add-task__input,
-.tasks__input{
+.tasks__input,
+.button {
   outline: none;
 }
 
@@ -85,7 +88,8 @@
   text-transform: uppercase;
 }
 
-.add-task__input {
+.add-task__input,
+.tasks__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,7 +102,7 @@
   color: #888;
 }
 
-.add-task__input:focus {
+.tasks__input:focus {
   color: #333;
 }
 
